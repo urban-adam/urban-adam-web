@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bebas+Neue&family=Ropa+Sans&display=swap");
+
+:root {
+	--color-skin: #f7efee;
+	--color-blueberry-dark: #0b2149;
+	/* Title Fonts */
+	/* font-family: "Ropa Sans", sans-serif; */
+	/* Subtitle font */
+	/* font-family: "Bebas Neue", cursive; */
+
+	/* Content font (default) */
+	font-family: "ABeeZee", sans-serif;
+}
+
+.font-title {
+	font-family: "Ropa Sans", sans-serif;
+}
+
+.font-subtitle {
+	font-family: "Bebas Neue", cursive;
+}
+
+a {
+	color: var(--color-blueberry-dark);
+}
+
+a:hover {
+	color: var(--color-blueberry-dark);
+}
+
+html {
+	background-color: var(--color-skin);
+}
+
+header {
+	position: fixed;
+	margin: 0 auto;
+	background-color: var(--color-skin);
+	text-transform: capitalize;
+}
