@@ -52,7 +52,7 @@ html {
 }
 
 header {
-	position: fixed;
+	position: sticky;
 	width: 100%;
 	margin: 0 auto;
 	background-color: var(--color-skin);
