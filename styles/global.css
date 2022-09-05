@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bebas+Neue&family=Ropa+Sans&display=swap");
 
 :root {
+	font-size: 100%;
 	--color-skin: #f7efee;
 	--color-blueberry-dark: #0b2149;
+	--color-blueberry-grey: #81889b;
+
+	--font-title: "Ropa Sans", sans-serif;
+	--font-sub: "Bebas Neue", cursive;
 	/* Title Fonts */
 	/* font-family: "Ropa Sans", sans-serif; */
 	/* Subtitle font */
@@ -10,6 +15,13 @@
 
 	/* Content font (default) */
 	font-family: "ABeeZee", sans-serif;
+}
+
+html,
+body,
+head {
+	margin: 0;
+	padding: 0;
 }
 
 .font-title {
@@ -20,12 +32,19 @@
 	font-family: "Bebas Neue", cursive;
 }
 
+.root-layout {
+	display: grid;
+	min-height: 100vh;
+	grid-template-rows: auto 1fr auto;
+}
+
 a {
 	color: var(--color-blueberry-dark);
+	transition: color 150ms ease-in-out;
 }
 
 a:hover {
-	color: var(--color-blueberry-dark);
+	color: var(--color-blueberry-grey);
 }
 
 html {
@@ -34,7 +53,35 @@ html {
 
 header {
 	position: fixed;
+	width: 100%;
 	margin: 0 auto;
 	background-color: var(--color-skin);
-	text-transform: capitalize;
+	display: flex;
+	min-height: 125px;
+}
+
+header > div {
+	margin: 0 3em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+header nav {
+	display: flex;
+	gap: 1em;
+}
+
+header nav a {
+	font-family: var(--font-title);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+footer {
+	background-color: var(--color-blueberry-dark);
+	color: var(--color-skin);
+	height: fit-content;
 }
