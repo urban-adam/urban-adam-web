@@ -17,6 +17,10 @@
 	font-family: "ABeeZee", sans-serif;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 html,
 body,
 head {
@@ -36,6 +40,29 @@ head {
 	display: grid;
 	min-height: 100vh;
 	grid-template-rows: auto 1fr auto;
+}
+
+.button {
+	text-decoration: none;
+	padding: 1em 2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: fit-content;
+	border-radius: 0.25em;
+	transition: color 150ms ease-in-out;
+}
+
+.button-invert {
+	background-color: var(--color-skin);
+	color: var(--color-blueberry-dark);
+	outline: solid 2px var(--color-skin);
+}
+.button-invert:hover {
+	background-color: var(--color-blueberry-dark);
+	color: var(--color-skin);
 }
 
 a {
@@ -81,7 +108,48 @@ header nav a {
 }
 
 footer {
+	display: flex;
+	flex-direction: column;
+}
+
+footer div:first-child {
 	background-color: var(--color-blueberry-dark);
 	color: var(--color-skin);
+	padding: 2em 2em;
+	gap: 0.5em;
+	display: flex;
+	align-items: center;
+	min-height: 25vh;
+}
+
+footer div:first-child section:first-child {
+	display: flex;
+	flex-direction: column;
+}
+
+footer div:first-child h2 {
+	font-size: 2rem;
+}
+
+footer div:last-child {
+	color: var(--color-blueberry-dark);
+	background-color: var(--color-skin);
 	height: fit-content;
+	padding: 2em 2em;
+	display: flex;
+	gap: 1em 4em;
+}
+
+@media screen and (max-width: 450px) {
+	.button {
+		padding: 1em 0.5em;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	footer div:last-child,
+	footer div:first-child {
+		flex-direction: column;
+		justify-content: center;
+	}
 }
