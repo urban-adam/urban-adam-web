@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bebas+Neue&family=Nunito+Sans:wght@400;600;700&family=Ropa+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Nunito+Sans:wght@400;600;700&family=Ropa+Sans&display=swap");
 
 :root {
 	font-size: 100%;
@@ -95,12 +95,16 @@ header > div {
 	width: 100%;
 }
 
-header nav {
+header .wrapper input[type="checkbox"] {
+	display: none;
+}
+
+header .wrapper nav {
 	display: flex;
 	gap: 1em;
 }
 
-header nav a {
+header .wrapper nav a {
 	font-family: var(--font-sub);
 	text-transform: uppercase;
 	text-decoration: none;
@@ -138,6 +142,29 @@ footer div:last-child {
 	padding: 2em 2em;
 	display: flex;
 	gap: 1em 4em;
+}
+
+@media screen and (max-width: 720px) {
+	header .wrapper input[type="checkbox"] {
+		display: block;
+	}
+
+	header nav {
+		flex-direction: column;
+		position: absolute;
+		top: 125px;
+		right: 0;
+		left: 0;
+		opacity: 0;
+		pointer-events: none;
+		overflow: hidden;
+		/* TODO: make toogle navbar using checkbox, it's still buggy actually */
+		/* height: calc(100vh - 125px); */
+		padding: 2em 4em;
+		transition: all 150ms ease;
+		background-color: var(--color-skin);
+		font-size: xx-large;
+	}
 }
 
 @media screen and (max-width: 450px) {
