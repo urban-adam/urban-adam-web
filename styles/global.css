@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bebas+Neue&family=Ropa+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bebas+Neue&family=Nunito+Sans:wght@400;600;700&family=Ropa+Sans&display=swap");
 
 :root {
 	font-size: 100%;
@@ -7,7 +7,7 @@
 	--color-blueberry-grey: #81889b;
 
 	--font-title: "Ropa Sans", sans-serif;
-	--font-sub: "Bebas Neue", cursive;
+	--font-sub: "Nunito Sans", cursive;
 	/* Title Fonts */
 	/* font-family: "Ropa Sans", sans-serif; */
 	/* Subtitle font */
@@ -29,11 +29,11 @@ head {
 }
 
 .font-title {
-	font-family: "Ropa Sans", sans-serif;
+	font-family: var(--font-title);
 }
 
 .font-subtitle {
-	font-family: "Bebas Neue", cursive;
+	font-family: var(--font-sub);
 }
 
 .root-layout {
@@ -101,7 +101,7 @@ header nav {
 }
 
 header nav a {
-	font-family: var(--font-title);
+	font-family: var(--font-sub);
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: bold;
