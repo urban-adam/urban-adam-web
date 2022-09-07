@@ -1,0 +1,34 @@
+.hero-section {
+	min-height: 80vh;
+	display: flex;
+}
+
+.hero-section .child {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	max-width: 60vw;
+	justify-content: center;
+	padding: 1em 3rem;
+	gap: 2rem;
+}
+
+.hero-section .child h1 {
+	font-size: 3rem;
+	margin: 0;
+}
+
+.wrapper {
+}
+
+.wrapper-flex {
+	display: flex;
+	gap: 1rem;
+}
+
+.hero-section .image {
+	flex-direction: column;
+	display: flex;
+	flex-grow: 0;
+	min-width: fit-content;
+}
