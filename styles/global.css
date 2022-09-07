@@ -57,6 +57,29 @@ html {
 	transition: color 150ms ease-in-out;
 }
 
+.button-primary {
+	background-color: var(--color-blueberry-dark);
+	color: var(--color-skin);
+	outline: solid 3px var(--color-blueberry-dark);
+}
+.button-primary:hover {
+	background-color: var(--color-skin);
+	color: var(--color-blueberry-dark);
+}
+
+.button-secondary {
+	background-color: var(--color-skin);
+	color: var(--color-blueberry-dark);
+	outline: solid 3px var(--color-blueberry-dark);
+	transition: all 150ms ease-in-out;
+}
+
+.button-secondary:hover {
+	background-color: var(--color-blueberry-dark);
+	color: var(--color-skin);
+	outline-offset: 4px;
+}
+
 .button-invert {
 	background-color: var(--color-skin);
 	color: var(--color-blueberry-dark);
