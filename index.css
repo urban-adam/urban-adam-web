@@ -13,6 +13,11 @@
 	gap: 2rem;
 }
 
+.hero-section p {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
 .hero-section .child h1 {
 	font-size: 3rem;
 	margin: 0;
@@ -31,4 +36,19 @@
 	display: flex;
 	flex-grow: 0;
 	min-width: fit-content;
+}
+.explanation-section {
+	display: flex;
+	flex-direction: row;
+	padding: 2em 2em;
+	font-size: 120%;
+}
+
+.explanation-section .container-title {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.container-title p {
+	max-width: 720px;
+	line-height: 1.5em;
 }
