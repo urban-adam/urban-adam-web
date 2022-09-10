@@ -7,7 +7,16 @@ textarea {
 
 main {
 	display: flex;
-	gap: 1rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.root-main {
+	display: flex;
+	flex-grow: 2;
+	width: 100%;
+	max-width: 1200px;
 }
 
 .content-section {
