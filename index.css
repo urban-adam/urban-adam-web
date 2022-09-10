@@ -1,54 +1,54 @@
 .hero-section {
-	min-height: 80vh;
-	display: flex;
+  min-height: 80vh;
+  display: flex;
 }
 
 .hero-section .child {
-	display: flex;
-	flex-direction: column;
-	flex-grow: 1;
-	max-width: 60vw;
-	justify-content: center;
-	padding: 1em 3rem;
-	gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 60vw;
+  justify-content: center;
+  padding: 1em 3rem;
+  gap: 2rem;
 }
 
 .hero-section p {
-	font-size: 1.5rem;
-	font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .hero-section .child h1 {
-	font-size: 3rem;
-	margin: 0;
+  font-size: 3rem;
+  margin: 0;
 }
 
-.wrapper {
-}
+/* .wrapper {
+} */
 
 .wrapper-flex {
-	display: flex;
-	gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .hero-section .image {
-	flex-direction: column;
-	display: flex;
-	flex-grow: 0;
-	min-width: fit-content;
+  flex-direction: column;
+  display: flex;
+  flex-grow: 0;
+  min-width: fit-content;
 }
 .explanation-section {
-	display: flex;
-	flex-direction: row;
-	padding: 2em 2em;
-	font-size: 120%;
+  display: flex;
+  flex-direction: row;
+  padding: 2em 2em;
+  font-size: 120%;
 }
 
 .explanation-section .container-title {
-	padding-left: 10%;
-	padding-right: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .container-title p {
-	max-width: 720px;
-	line-height: 1.5em;
+  max-width: 720px;
+  line-height: 1.5em;
 }
