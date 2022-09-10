@@ -180,7 +180,7 @@ footer div:last-child {
     opacity: 0;
     pointer-events: none;
     overflow: hidden;
-    /* TODO: make toogle navbar using checkbox, it's still buggy actually */
+    /* TODO: make toggle navbar using checkbox, it's still buggy actually */
     /* height: calc(100vh - 125px); */
     padding: 2em 4em;
     transition: all 150ms ease;
