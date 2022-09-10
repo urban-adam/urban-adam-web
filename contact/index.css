@@ -1,0 +1,63 @@
+input[type="text"],
+input[type="email"],
+textarea {
+	border: none;
+	padding: 0.5em;
+}
+
+main {
+	display: flex;
+	gap: 1rem;
+}
+
+.content-section {
+	display: flex;
+	flex-direction: column;
+	gap: 0em;
+	flex-grow: 1;
+}
+
+.content-section .title-container {
+	padding: 1em 2rem;
+}
+
+.content-section form {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	padding: 1em 2rem;
+}
+
+.content-section form div {
+	display: flex;
+	flex-direction: column;
+}
+
+aside.info {
+	background-color: var(--color-blueberry-dark);
+	color: var(--color-skin);
+	padding: 0 2em;
+	max-width: 360px;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+aside.info img {
+	max-width: 240px;
+	bottom: 5rem;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	pointer-events: none;
+}
+
+aside.info section {
+	position: relative;
+	bottom: 6rem;
+	margin: 0;
+}
+aside.info section h2,
+aside.info section p {
+	margin: 1rem;
+}
