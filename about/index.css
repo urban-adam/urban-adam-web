@@ -77,4 +77,12 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  margin-top: 50px;
+}
+
+.team-column2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  justify-content: space-between;
 }
